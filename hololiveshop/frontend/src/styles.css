@@ -1,0 +1,33 @@
+:root{--pad:16px;--radius:12px;--shadow:0 6px 18px rgba(0,0,0,.08);--muted:#666}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial}
+a{text-decoration:none;color:#111}
+.container{max-width:1200px;margin:0 auto;padding:0 var(--pad)}
+.header{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:14px var(--pad);border-bottom:1px solid #eee;position:sticky;top:0;background:#fff;z-index:10}
+.brand{font-weight:700;font-size:18px}
+.search{display:flex;gap:8px}
+.search input{padding:10px 12px;border:1px solid #ddd;border-radius:8px;min-width:260px}
+.btn{padding:10px 14px;border:1px solid #ddd;border-radius:10px;background:#111;color:#fff;border:none;cursor:pointer}
+.btn.alt{background:#fff;color:#111;border:1px solid #ddd}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card{border:1px solid #eee;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;background:#fff}
+.card img{width:100%;height:200px;object-fit:cover}
+.card .p{padding:12px}
+.price{font-weight:600}
+.row{display:flex;gap:12px;align-items:center}
+.col{display:flex;flex-direction:column;gap:8px}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.gallery img{width:100%;height:320px;object-fit:cover}
+.select{padding:10px;border:1px solid #ddd;border-radius:8px}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{border-bottom:1px solid #eee;padding:12px;text-align:left}
+.nav{display:flex;gap:10px;flex-wrap:wrap}
+.nav a{padding:8px 10px;border-radius:8px}
+.nav a.active{background:#111;color:#fff}
+.form{display:grid;gap:12px;max-width:520px}
+.input{padding:10px;border:1px solid #ddd;border-radius:8px;width:100%}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pagination{display:flex;gap:8px;justify-content:center;margin:20px 0}
+.badge{font-size:12px;background:#111;color:#fff;border-radius:999px;padding:4px 8px}
+.panel{border:1px solid #eee;border-radius:12px;padding:16px;background:#fff;box-shadow:var(--shadow)}
+.page{padding:20px 0}
